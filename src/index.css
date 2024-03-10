@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "logo";
+  src: url("../public/Font/logo400.woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Santral3";
+  src: url("../public/Font/main300.woff2");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Santral4";
+  src: url("../public/Font/main400.woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Santral6";
+  src: url("../public/Font/main600.woff2");
+  font-weight: 600;
+}
