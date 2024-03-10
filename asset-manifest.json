@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Tiffany/static/css/main.dd895bbc.css",
-    "main.js": "/Tiffany/static/js/main.9aaae2d0.js",
+    "main.js": "/Tiffany/static/js/main.088e0b4e.js",
     "static/media/4.jpg": "/Tiffany/static/media/4.6508bd10a274ab346c4d.jpg",
     "static/media/1.jpg": "/Tiffany/static/media/1.7152620f8c3f88a240d6.jpg",
     "static/media/5.jpg": "/Tiffany/static/media/5.15ef1104034403257705.jpg",
@@ -24,10 +24,10 @@
     "index.html": "/Tiffany/index.html",
     "static/media/Hamburger-Menu.svg": "/Tiffany/static/media/Hamburger-Menu.b2950266c649481b1001f9cf98f1788f.svg",
     "main.dd895bbc.css.map": "/Tiffany/static/css/main.dd895bbc.css.map",
-    "main.9aaae2d0.js.map": "/Tiffany/static/js/main.9aaae2d0.js.map"
+    "main.088e0b4e.js.map": "/Tiffany/static/js/main.088e0b4e.js.map"
   },
   "entrypoints": [
     "static/css/main.dd895bbc.css",
-    "static/js/main.9aaae2d0.js"
+    "static/js/main.088e0b4e.js"
   ]
 }
