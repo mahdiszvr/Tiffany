@@ -43,9 +43,9 @@ const App = () => {
       <Header />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home products={products} />} />
-          <Route path="/article" element={<ArticlePage />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/Tiffany/" element={<Home products={products} />} />
+          <Route path="/Tiffany/article" element={<ArticlePage />} />
+          <Route path="/Tiffany/contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>
       <Footer />

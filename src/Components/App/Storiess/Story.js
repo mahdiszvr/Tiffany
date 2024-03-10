@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Story = ({ story }) => {
   return (
     <>
-      <Link to="/article"
+      <Link to="/Tiffany/article"
         className="w-full md:w-1/4 text-sm border p-2 md:p-5 flex flex-row items-center md:flex-col"
       >
         <img src={story.img} className="w-1/2 md:w-full pb-4" />
