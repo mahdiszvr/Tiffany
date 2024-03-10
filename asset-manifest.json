@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/Tiffany/static/css/main.dd895bbc.css",
+    "main.js": "/Tiffany/static/js/main.9aaae2d0.js",
+    "static/media/4.jpg": "/Tiffany/static/media/4.6508bd10a274ab346c4d.jpg",
+    "static/media/1.jpg": "/Tiffany/static/media/1.7152620f8c3f88a240d6.jpg",
+    "static/media/5.jpg": "/Tiffany/static/media/5.15ef1104034403257705.jpg",
+    "static/media/2.jpg": "/Tiffany/static/media/2.ea3b1af3c9ff50403559.jpg",
+    "static/media/main.jpg": "/Tiffany/static/media/main.958e1d70c23778e1b8ed.jpg",
+    "static/media/3.jpg": "/Tiffany/static/media/3.d56754fd6a05353704ad.jpg",
+    "static/media/main600.woff2": "/Tiffany/static/media/main600.9c717af6be6893cec612.woff2",
+    "static/media/main400.woff2": "/Tiffany/static/media/main400.c7a27abd0b0e1f502fa8.woff2",
+    "static/media/main300.woff2": "/Tiffany/static/media/main300.55738a2cd7db0383aeec.woff2",
+    "static/media/logo400.woff2": "/Tiffany/static/media/logo400.579dd5e89b231a17deb4.woff2",
+    "static/media/tiffco-logo-2.svg": "/Tiffany/static/media/tiffco-logo-2.218761ef2e2afe3caee1c2cb34a54903.svg",
+    "static/media/StoreLocator.svg": "/Tiffany/static/media/StoreLocator.c74a1b178ff1f4a7fab7d1f90aed159b.svg",
+    "static/media/MyAccount.svg": "/Tiffany/static/media/MyAccount.ef9d3176691742013601c3808b483ecc.svg",
+    "static/media/Concierge.svg": "/Tiffany/static/media/Concierge.a3e4e1c058f1446afdd69fcd7606e452.svg",
+    "static/media/Search-1.svg": "/Tiffany/static/media/Search-1.b72b3d74dded3ab25eb0ce0d4b01338b.svg",
+    "static/media/Phonenew.svg": "/Tiffany/static/media/Phonenew.f4e601191c672b689769136b83cfd0f7.svg",
+    "static/media/Wishlist.svg": "/Tiffany/static/media/Wishlist.877bc3587c83124238b0d30b3a635084.svg",
+    "static/media/ShoppingBag.svg": "/Tiffany/static/media/ShoppingBag.1eae2f6311e2ab46235cd4cf375df625.svg",
+    "static/media/Appointment.svg": "/Tiffany/static/media/Appointment.539526b82fb7a3fa64597ffaedb15d77.svg",
+    "index.html": "/Tiffany/index.html",
+    "static/media/Hamburger-Menu.svg": "/Tiffany/static/media/Hamburger-Menu.b2950266c649481b1001f9cf98f1788f.svg",
+    "main.dd895bbc.css.map": "/Tiffany/static/css/main.dd895bbc.css.map",
+    "main.9aaae2d0.js.map": "/Tiffany/static/js/main.9aaae2d0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dd895bbc.css",
+    "static/js/main.9aaae2d0.js"
+  ]
+}
