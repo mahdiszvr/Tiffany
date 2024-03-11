@@ -11,23 +11,118 @@ import Nav from "./Nav/Nav.js";
 import { useState } from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
+import React from "react";
+import {
+  Drawer,
+  Button,
+  Typography,
+  IconButton,
+} from "@material-tailwind/react";
 
 const Header = () => {
-  const [isNavOpen, setIsNavOpen] = useState(false);
+  // const [isNavOpen, setIsNavOpen] = useState(false);
+  const [open, setOpen] = React.useState(false);
+
+  const openDrawer = () => setOpen(true);
+  const closeDrawer = () => setOpen(false);
   return (
     <>
       <div className="w-full py-2 md:py-4 px-3 md:px-6 flex flex-col justify-between gap-4">
         <div className="top flex justify-between items-center">
           <nav className="flex lg:hidden">
             <section className="MOBILE-MENU ">
-              <div
+              <React.Fragment>
+                <div className="HAMBURGER-ICON space-y-2" onClick={openDrawer}>
+                  <img src={Hamburger} className="w-4 h-4" />
+                </div>
+                <Drawer
+                  open={open}
+                  onClose={closeDrawer}
+                  className="p-4"
+                  overlay={false}
+                  size={960}
+                >
+                  <div className="mb-6 flex items-center justify-between">
+                    <Typography variant="h5" color="blue-gray"></Typography>
+                    <IconButton
+                      variant="text"
+                      color="blue-gray"
+                      onClick={closeDrawer}
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth={2}
+                        stroke="currentColor"
+                        className="h-5 w-5"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M6 18L18 6M6 6l12 12"
+                        />
+                      </svg>
+                    </IconButton>
+                  </div>
+                  <ul className="p-3 mt-7 text-sm flex flex-col items-start gap-6 min-h-[250px] font-Santral4">
+                    <li>
+                      <a href="#">Jewelry</a>
+                    </li>
+                    <li>
+                      <a href="#">Gifts</a>
+                    </li>
+                    <li>
+                      <a href="#">Love & Engagement</a>
+                    </li>
+                    <li>
+                      <a href="#">Fine Watches</a>
+                    </li>
+
+                    <li>
+                      <a href="#">Home & Accessories</a>
+                    </li>
+                    <li>
+                      <a href="#">Fragrance</a>
+                    </li>
+                    <li>
+                      <a href="#">Men’s</a>
+                    </li>
+                    <li>
+                      <a href="#">Stories</a>
+                    </li>
+
+                    <div className="w-full h-[1px] bg-gray-400"></div>
+
+                    <li>
+                      <Link to={"/Tiffany/contact"} className="font-Santral3 flex">
+                        <img src={contact} className="w-4 h-4 mr-2" />
+                        <a href="#">Contact us</a>
+                      </Link>
+                    </li>
+                    <li className="font-Santral3 flex">
+                      <img src={Appointment} className="w-4 h-4 mr-2" />
+                      <a href="#">Book an Appointment</a>
+                    </li>
+                    <li className="font-Santral3 flex">
+                      <img src={Account} className="w-4 h-4 mr-2" />
+                      <a href="#">My Account</a>
+                    </li>
+                    <li className="font-Santral3 flex">
+                      <img src={location} className="w-4 h-4 mr-2" />
+                      <a href="#">Store Locator</a>
+                    </li>
+                  </ul>
+                </Drawer>
+              </React.Fragment>
+              {/* <div
                 className="HAMBURGER-ICON space-y-2"
-                onClick={() => setIsNavOpen((prev) => !prev)}
+                onClick={openDrawer}
               >
                 <img src={Hamburger} className="w-4 h-4" />
-              </div>
+              </div> */}
 
-              <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
+              {/* <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
                 <div
                   className="absolute top-0 right-0 px-3 py-3"
                   onClick={() => setIsNavOpen(false)}
@@ -91,7 +186,7 @@ const Header = () => {
                     <a href="#">Store Locator</a>
                   </li>
                 </ul>
-              </div>
+              </div> */}
             </section>
           </nav>
 
@@ -114,20 +209,20 @@ const Header = () => {
             <button>
               <img src={location} className="w-4 h-4 mr-10" />
             </button>
-            <button className="flex">
+            <Link to={"/Tiffany/contact"} className="flex">
               <img src={contact} className="w-4 h-4 mr-2" />
               <p className="text-xs font-Santral4 hover:text-[#81D8D0]">
                 Contact Us
               </p>
-            </button>
+            </Link>
           </div>
 
-          <a href="#">
+          <Link to={"/Tiffany/"}>
             <img
               src={Image}
               className="inline w-[120px] md:w-[192px] h-[26px]"
             />
-          </a>
+          </Link>
 
           <div className="flex justify-end h-[16px]">
             <a href="#" className="hidden lg:flex">

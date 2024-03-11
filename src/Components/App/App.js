@@ -19,7 +19,10 @@ const App = () => {
         },
       })
         .then((data) => data.json())
-        .then((res) => setProducts(res.record));
+        .then((res) => {
+          setProducts(res.record);
+          console.log(res.record);
+        });
 
       setError("");
     } catch (error) {
@@ -40,15 +43,15 @@ const App = () => {
         ) : null}
       </div>
 
-      <Header />
       <BrowserRouter>
+        <Header />
         <Routes>
           <Route path="/Tiffany/" element={<Home products={products} />} />
           <Route path="/Tiffany/article" element={<ArticlePage />} />
           <Route path="/Tiffany/contact" element={<Contact />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
-      <Footer />
     </>
   );
 };
